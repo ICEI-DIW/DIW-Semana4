@@ -41,6 +41,7 @@ do{
     printf("oi");
     printf("1");
     return 0;
+    printf("Mudanca");
 }
 
 /*
