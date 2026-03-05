@@ -32,12 +32,14 @@ do{
     break;
     case 1:
     method_01();
-    
+    break;
     default:printf("\nErro:Opcao invalida.\n");
     }
 }while(opcao != 0);
     printf ( "\n\nApertar ENTER para terminar." );
     getchar();
+    printf("oi");
+    printf("1");
     return 0;
 }
 
