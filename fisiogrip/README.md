@@ -1,4 +1,35 @@
-# FisioGrasp — Plataforma de Reabilitação Gamificada
+# 🖐️ FisioGrasp — Plataforma de Reabilitação Gamificada
+
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![C++](https://img.shields.io/badge/backend-C%2B%2B-00599C?logo=cplusplus)
+![React](https://img.shields.io/badge/frontend-React%20%2B%20Vite-61DAFB?logo=react)
+![MySQL](https://img.shields.io/badge/database-MySQL-4479A1?logo=mysql)
+![Arduino](https://img.shields.io/badge/hardware-Arduino-00979D?logo=arduino)
+
+FisioGrasp é uma plataforma de **reabilitação física gamificada**, que integra uma luva com sensores (Arduino), um back-end em **C++**, um front-end em **React/Vite** e banco de dados **MySQL**, permitindo acompanhar sessões de exercícios, gerar rankings e visualizar relatórios administrativos.
+
+## Sumário
+
+- [Screenshots](#screenshots)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Banco de dados (MySQL)](#1-banco-de-dados-mysql)
+- [Back-end (C++)](#2-back-end-c)
+- [Front-end (React)](#3-front-end-react)
+- [Painel administrativo](#4-painel-administrativo)
+- [Fluxo do sistema](#fluxo-do-sistema)
+- [Rotas da API](#rotas-da-api)
+- [Licença](#licença)
+
+## Screenshots
+
+| Início — escolha do exercício | Painel Admin — Sessões |
+|:---:|:---:|
+| ![Tela inicial](docs/screenshots/inicio.jpeg) | ![Sessões registradas](docs/screenshots/admin-sessoes.jpeg) |
+
+| Painel Admin — Levantamento |
+|:---:|
+| ![Levantamento agregado](docs/screenshots/admin-levantamento.jpeg) |
 
 ## Estrutura do projeto
 
@@ -118,3 +149,7 @@ MySQL
 | GET    | /admin/usuarios             | (admin) Lista todos os usuários|
 | GET    | /admin/sessoes              | (admin) Lista todas as sessões |
 | GET    | /admin/relatorio            | (admin) Levantamento agregado  |
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT — veja o arquivo [LICENSE](LICENSE) para mais detalhes.

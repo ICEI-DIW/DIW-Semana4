@@ -16,7 +16,7 @@
 int main() {
     // Conecta ao banco de dados (Singleton)
     DBConnection& db = DBConnection::getInstance();
-    if (!db.connect("localhost", "root", "171207", "fisiogrip", 3306)) {
+    if (!db.connect("localhost", "root", "senha", "fisiogrip", 3306)) {
         std::cerr << "[ERRO] Falha ao conectar ao MySQL\n";
         return 1;
     }
