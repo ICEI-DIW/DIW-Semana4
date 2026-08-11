@@ -1,0 +1,44 @@
+*{
+
+margin:0;
+padding:0;
+}
+
+body{
+background-color: #ff0303ac;
+background-image: url(gustavo.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: end;
+}
+.class{
+    font-size : 2em;
+    font-weight: bold;
+    margin-top: 5%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: end;
+}
+div{
+font-size : 2em;
+margin-bottom: 1%;
+width: 10%;
+height: 10%;
+border-radius: 20px;
+background-color: #fffcff;
+display : flex;
+justify-content: center;
+align-items: center;
+
+
+}
