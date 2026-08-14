@@ -4,18 +4,14 @@ public class Atividade_01 {
         String palavra = "";
         Scanner sc = new Scanner(System.in);
         int qtd = 0;
-        do{
-        System.out.print("Escolha uma palavra:");
-        palavra = sc.nextLine();
-        qtd = Upper(palavra);
-        System.out.println(qtd);
-        }while(palavra.compareTo("FIM")!= 0);
+       while (!(palavra = sc.nextLine()).equals("FIM")) {
+            qtd = Upper(palavra);
+            System.out.println(qtd);
+        }
 
-
-
-
-    
+        sc.close();
     }
+    
     public static int Upper(String palavra){
         int tamanho = palavra.length();
         int caractere = 0;
