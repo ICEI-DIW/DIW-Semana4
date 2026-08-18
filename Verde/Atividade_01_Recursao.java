@@ -17,7 +17,7 @@ public class Atividade_01_Recursao {
 
  
 
-    
+    sc.close();
     }
     public static int Upperrecursive(String palavra, int index, int count){
         if(index >= palavra.length()){
