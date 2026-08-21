@@ -27,18 +27,18 @@ width: 70vw;
 height: 70vh;
 display: flex;
 justify-content: center;
-align-items: end;
+align-items: flex-start;
 }
-div{
-font-size : 2em;
-margin-bottom: 1%;
-width: 11%;
-height: 13%;
-border-radius: 20px;
-background-color: #fffcff;
-display : flex;
-justify-content: center;
-align-items: center;
+    div{
+    font-size : 2em;
+    margin-bottom: 1%;
+    width: 11%;
+    height: 13%;
+    border-radius: 20px;
+    background-color: #fffcff;
+    display : flex;
+    justify-content: center;
+    align-items: flex-start;
 
 
-}
+    }
