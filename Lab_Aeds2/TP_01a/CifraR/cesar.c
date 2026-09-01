@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include <string.h>
 
-char* cifra(char palavra[], int n){
-    if(n < strlen(palavra)){
+char* cifra(char palavra[], int n, int tamanho){
+    if(n < tamanho){
         palavra[n] = (char)(palavra[n] + 3);
-        return cifra(palavra, n + 1);
+        return cifra(palavra, n + 1, tamanho);
     }
     return palavra;
 }
@@ -28,7 +27,7 @@ int main(){
     palavra[tamanho] = '\0';
 
     while(!fim(palavra)){
-        printf("%s\n", cifra(palavra, 0));
+        printf("%s\n", cifra(palavra, 0, tamanho-1));
         fgets(palavra, 1000, stdin);
         tamanho = 0;
         while(palavra[tamanho] != '\0' && palavra[tamanho] != '\n'){
