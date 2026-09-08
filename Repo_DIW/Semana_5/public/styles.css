@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --azul: #0077b6;
+    --laranja: #f48c06;
+    --claro: #f8f9fa;
+    --escuro: #023047;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--escuro);
+    background: var(--claro);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: var(--azul);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header #titulo {
+    color: white;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    color: var(--laranja);
+  }
+  
+  .inicio {
+    position: relative;
+    text-align: center;
+  }
+  
+  .inicio img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .inicio::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 48, 71, .35);
+  }
+  
+  .inicio h1,
+  .inicio button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .inicio h1 {
+    top: 40%;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,.4);
+  }
+  
+  .inicio button {
+    top: 68%;
+  }
+  
+  .sobre {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 32px;
+  }
+  
+  .sobre-texto {
+    flex: 1;
+  }
+  
+  .sobre-texto h2 {
+    color: var(--azul);
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  
+  .sobre-texto p {
+    margin-bottom: 14px;
+    line-height: 1.7;
+  }
+  
+  .sobre-img {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(0,0,0,.15);
+  }
+  
+  .titulo-secao {
+    text-align: center;
+    color: var(--escuro);
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  .titulo-secao::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: var(--laranja);
+    margin: 12px auto 0;
+    border-radius: 2px;
+  }
+  .intro-atracoes {
+    text-align: center;
+    max-width: 700px;
+    margin: 16px auto 0;
+    padding: 0 20px;
+    color: #456;
+    line-height: 1.6;
+  }
+  
+  .atracoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 40px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    transition: transform .2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .card h2 {
+    margin: 12px 0 8px;
+    color: var(--azul);
+  }
+  
+  .card p {
+    margin-bottom: 12px;
+    font-size: .9rem;
+  }
+  
+  button {
+    background: var(--laranja);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    opacity: .85;
+  }
+  
+  .contato-secao {
+    background: var(--azul);
+    padding: 60px 20px;
+  }
+  
+  .inscricao {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 32px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.2);
+    text-align: center;
+  }
+  
+  .inscricao h2 {
+    color: var(--escuro);
+  }
+  
+  .inscricao input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background: var(--escuro);
+    color: white;
+    padding: 40px 32px;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-col h3 {
+    color: var(--laranja);
+    margin-bottom: 12px;
+  }
+  
+  .footer-col p {
+    margin-bottom: 8px;
+    font-size: .9rem;
+    line-height: 1.6;
+  }
+  
+  .footer-col a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: .9rem;
+  }
+  
+  .footer-col a:hover {
+    color: var(--laranja);
+  }
+  
+  @media (max-width: 768px) {
+    .sobre {
+      flex-direction: column;
+    }
+    header {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
