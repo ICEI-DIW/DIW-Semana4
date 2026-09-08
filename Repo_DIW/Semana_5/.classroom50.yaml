@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "pmg-cc-2026-2-diw-t2-6162102"
+assignment: "icei-diw-diw-atividade-5"
+owner:
+  username: "Mavilaa"
+  id: 247059415
+  accepted_at: "2026-09-08T12:12:55Z"
+source:
+  owner: "ICEI-DIW"
+  owner_id: 198835443
+  repo: "diw-atividade-5"
+  branch: "main"
